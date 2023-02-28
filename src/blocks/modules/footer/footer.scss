@@ -15,14 +15,6 @@
         font-size: 14px;
         line-height: 140%;
         color: #FFFFFF;
-        p {
-            &:first-child {
-                margin-top: 0;
-            }
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
         @media all and (max-width: 1023px) {
             font-size: 12px;
             padding-bottom: 30px;
