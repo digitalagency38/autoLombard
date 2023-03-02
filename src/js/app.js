@@ -7,6 +7,7 @@ import Vue from 'vue/dist/vue.js';
 import Header from '../blocks/modules/header/header.js';
 import Modals from '../blocks/modules/modals/modals.js';
 import BlockDistance from '../blocks/modules/block_distance/block_distance.js';
+import BlockReviews from '../blocks/modules/block_reviews/block_reviews.js';
 
 window.app = new Vue({
     el: '#app',
@@ -49,6 +50,30 @@ window.app = new Vue({
                 }
             }
         }),
+        BlockReviews: new BlockReviews({
+            sliderOptions: {
+                type: 'slider',
+                perView: 3,
+                gap: 20,
+                startAt: 0,
+                breakpoints: {
+                    1023: {
+                        perView: 2,
+                        gap: 16,
+                    },
+                    767: {
+                        perView: 1
+                    },
+                    480: {
+                        perView: 1,
+                        peek: {
+                            before: 16,
+                            after: 16
+                        }
+                    }
+                }
+            }
+        }),
     }),
     beforeCreate() {        
         window.addEventListener('resize', () => {
@@ -60,6 +85,7 @@ window.app = new Vue({
         this.header.init();
         this.modals.init();
         this.BlockDistance.init();
+        this.BlockReviews.init();
     },
     computed: {
         isMobile: function () {

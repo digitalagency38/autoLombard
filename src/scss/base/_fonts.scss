@@ -7,24 +7,24 @@
 @font-face {
 	font-family: "museosanscyrl";
 	font-display: swap;
-	src: url("../fonts/museosanscyrl-300.woff2") format("woff2"), url("../fonts/museosanscyrl-300.woff") format("woff"), url("../fonts/museosanscyrl-300.ttf") format("ttf");
-	font-weight: 300;
-}
-@font-face {
-	font-family: "museosanscyrl";
-	font-display: swap;
-	src: url("../fonts/museosanscyrl-900.woff2") format("woff2"), url("../fonts/museosanscyrl-900.woff") format("woff"), url("../fonts/museosanscyrl-900.ttf") format("ttf");
-	font-weight: 900;
-}
-@font-face {
-	font-family: "museosanscyrl";
-	font-display: swap;
 	src: url("../fonts/museosanscyrl-500.woff2") format("woff2"), url("../fonts/museosanscyrl-500.woff") format("woff"), url("../fonts/museosanscyrl-500.ttf") format("ttf");
 	font-weight: 500;
 }
 @font-face {
 	font-family: "museosanscyrl";
 	font-display: swap;
+	src: url("../fonts/museosanscyrl-300.woff2") format("woff2"), url("../fonts/museosanscyrl-300.woff") format("woff"), url("../fonts/museosanscyrl-300.ttf") format("ttf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "museosanscyrl";
+	font-display: swap;
 	src: url("../fonts/museosanscyrl-700.woff2") format("woff2"), url("../fonts/museosanscyrl-700.woff") format("woff"), url("../fonts/museosanscyrl-700.ttf") format("ttf");
 	font-weight: 700;
+}
+@font-face {
+	font-family: "museosanscyrl";
+	font-display: swap;
+	src: url("../fonts/museosanscyrl-900.woff2") format("woff2"), url("../fonts/museosanscyrl-900.woff") format("woff"), url("../fonts/museosanscyrl-900.ttf") format("ttf");
+	font-weight: 900;
 }

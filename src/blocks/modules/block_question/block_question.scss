@@ -17,4 +17,81 @@
             font-size: 32px;
         }
     }
+    &__blocks {
+        padding: 40px;
+        background: #FFFFFF;
+        border-radius: 40px;
+        @media all and (max-width: 1023px) {
+            padding: 40px 20px;
+        }
+    }
+    &__tit {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: #071A39;
+        position: relative;
+        transition: all .3s ease-out;
+        cursor: pointer;
+        @media all and (max-width: 1023px) {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &:hover {
+            color: #1D68E4;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.4' d='M26.983 3.33337H13.0163C6.94967 3.33337 3.33301 6.95004 3.33301 13.0167V26.9667C3.33301 33.05 6.94967 36.6667 13.0163 36.6667H26.9663C33.033 36.6667 36.6497 33.05 36.6497 26.9834V13.0167C36.6663 6.95004 33.0497 3.33337 26.983 3.33337Z' fill='%231D68E4'/%3E%3Cpath d='M20.0003 24.85C19.6836 24.85 19.3669 24.7333 19.1169 24.4833L13.2336 18.6C12.7503 18.1167 12.7503 17.3167 13.2336 16.8333C13.7169 16.35 14.5169 16.35 15.0003 16.8333L20.0003 21.8333L25.0003 16.8333C25.4836 16.35 26.2836 16.35 26.7669 16.8333C27.2503 17.3167 27.2503 18.1167 26.7669 18.6L20.8836 24.4833C20.6336 24.7333 20.3169 24.85 20.0003 24.85Z' fill='%231D68E4'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            @media all and (max-width: 1023px) {
+                right: -60px;
+            }
+        }
+    }
+    &__txt {
+        padding-right: 60px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        color: #0A2756;
+        padding-top: 10px;
+        display: none;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+            padding-right: 0;
+        }
+    }
+    &__block {
+        padding: 27px 0;
+        padding-right: 35px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #071A39;
+            @media all and (max-width: 1023px) {
+                border-color: #E3ECFC;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            padding: 24px 0;
+            padding-right: 60px;
+        }
+        &.isActive {
+            .block_question__tit {
+                color: #1D68E4;
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+            .block_question__txt {
+                display: block;
+            }
+        }
+    }
 }
