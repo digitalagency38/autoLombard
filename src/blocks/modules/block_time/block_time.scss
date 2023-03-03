@@ -70,6 +70,9 @@
         text-align: center;
         display: inline-block;
         text-decoration: none;
+        &:hover {
+            background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
+        }
         @media all and (max-width: 520px) {
             padding: 16px;
             width: 100%;

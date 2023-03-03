@@ -94,6 +94,9 @@
         margin-bottom: 40px;
         background: #397BE7;
         border-radius: 5px;
+        &:hover {
+            background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
+        }
     }
     &__items {
         display: flex;

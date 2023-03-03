@@ -56,6 +56,9 @@
                     cursor: pointer;
                     border: 0;
                     display: inline-block;
+                    &:hover {
+                        background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
+                    }
                     @media all and (max-width: 1023px) {
                         margin-left: 0;
                         width: 100%;

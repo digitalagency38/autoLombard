@@ -2,6 +2,7 @@
     background: #FFFFFF;
     position: relative;
     padding: 30px 80px;
+    padding-bottom: 20px;
     @media all and (max-width: 1023px) {
         padding: 30px 20px;
     }
@@ -84,8 +85,14 @@
                             line-height: 24px;
                             color: #071A39;
                             padding: 26px 0;
-                            display: block;
                             text-decoration: none;
+                            display: inline-block;
+                            padding-bottom: 10px;
+                            margin-bottom: 16px;
+                            border-bottom: 1px solid transparent;
+                            &:hover {
+                                border-color: #071A39;
+                            }
                         }
                     }
                 }
@@ -179,6 +186,11 @@
                     line-height: 24px;
                     color: #0A2756;
                     text-decoration: none;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid transparent;
+                    &:hover {
+                        border-color: #0A2756;
+                    }
                 }
             }
         }

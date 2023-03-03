@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230303171558">
+    <link rel="stylesheet" href="css/style.css?_v=20230303214427">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -121,48 +121,82 @@
 </header>
         <div class="content">
             <div class="center_block">
-                <div class="block_first">
-    <div class="block_first__l-side">
-        <div class="breadcrums">
-            <div class="breadcrums__items">
-                <a href="#">Главная</a>
-                <div class="breadcrums__splash"></div>
-                <span>Хлебные крошки</span>
+                <div class="block_main">
+    <div class="block_main__l-side">
+        <h1 class="block_main__h1">Займы под <span>залог <br> авто</span> в Москве</h1>
+        <div class="block_main__blocks">
+            <div class="block_main__block">
+                От <b>50 тыс.</b> <br> <b>до 3 млн</b> рублей
             </div>
-        </div>
-        <h1 class="block_first__h1">Кредит <span>под залог</span> <br> машины</h1>
-        <div class="block_first__blocks">
-            <div class="block_first__block">
-                От <b>50 тыс.</b> <br> <b>до 3 млн</b> рублей
+            <div class="block_main__block">
+                Ставка <br><b>от 3%</b> в месяц
             </div>
-            <div class="block_first__block">
-                Ставка <br><b>от 3%</b> в месяц
-            </div>
-            <div class="block_first__block">
+            <div class="block_main__block">
                 <b>Без подтверждения</b> дохода
             </div>
-            <div class="block_first__block">
-                Автомобиль <br> <b>остаётся у вас</b>
+            <div class="block_main__block">
+                Автомобиль <br> <b>остаётся у вас</b>
             </div>
         </div>
-        <div class="block_first__form">
+        <div class="block_main__form">
             <form action="">
                 <input type="tel" placeholder="+7 (___) ___-__-__">
                 <input type="submit" value="Отправить заявку">
             </form>
         </div>
     </div>
-    <div class="block_first__r-side">
-        <picture><source srcset="./img/first1.webp" type="image/webp"><img src="./img/first1.png" alt=""></picture>
+    <div class="block_main__r-side">
+        <picture><source srcset="./img/first2.webp" type="image/webp"><img src="./img/first2.png" alt=""></picture>
+    </div>
+</div>
+                <div class="block_steps">
+    <div class="block_steps__title">Этапы получения займа</div>
+    <div class="glide step-glide-js">
+        <div data-glide-el="track" class="glide__track">
+            <div class="block_steps__blocks">
+                <div class="block_steps__block">
+                    <div class="block_steps__icon">
+                        <img src="./img/icon5.svg" alt="">
+                    </div>
+                    <div class="block_steps__tit">Оставляете заявку</div>
+                    <div class="block_steps__subtitle">На сайте или по номеру</div>
+                    <a href="tel:74994440562" class="block_steps__tel">+7 499 444-05-62</a>
+                    <a href="#" class="block_steps__link">Оставить заявку</a>
+                </div>
+                <div class="block_steps__block">
+                    <div class="block_steps__icon">
+                        <img src="./img/icon6.svg" alt="">
+                    </div>
+                    <div class="block_steps__tit">Согласовываем
+                        осмотр</div>
+                    <div class="block_steps__subtitle">Приезжаете к нам в офис или мы приезжаем в удобное для вас место</div>
+                </div>
+                <div class="block_steps__block">
+                    <div class="block_steps__icon">
+                        <img src="./img/icon7.svg" alt="">
+                    </div>
+                    <div class="block_steps__tit">Проверяем
+                        авто</div>
+                    <div class="block_steps__subtitle">Проверяем на юридическую чистоту</div>
+                </div>
+                <div class="block_steps__block">
+                    <div class="block_steps__icon">
+                        <img src="./img/icon8.svg" alt="">
+                    </div>
+                    <div class="block_steps__tit">Выплачиваем
+                        деньги</div>
+                    <div class="block_steps__subtitle">Если предложение нас устраивает — мы сразу же заключаем сделку и выплачиваем всю сумму.</div>
+                </div>
+            </div>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0">1</button>
+            <button class="glide__bullet" data-glide-dir="=1">2</button>
+            <button class="glide__bullet" data-glide-dir="=2">3</button>
+        </div>
     </div>
 </div>
             </div>  
-            <div class="block_steps">
-    <div class="block_steps__title"></div>
-    <div class="block_steps__blocks">
-        
-    </div>
-</div>
             <div class="block_services">
     <div class="block_services__item center_block">
         <div class="block_services__title">Услуги автоломбарда</div>
@@ -306,6 +340,145 @@
     </div>
 </div>
             </div>
+            <div class="block_prev">
+    <div class="block_prev__item center_block">
+        <div class="block_prev__title">Преимущества залога в авто ломбарде</div>
+        <div class="block_prev__blocks" v-if="window.width >1023">
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre1.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Более 7 лет на рынке</div>
+                <div class="block_prev__text">Автоломбард TOP MCA на рынке с 2013 года. Выкупаем авто за максимальную стоимость.</div>
+            </div>
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre2.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Выездное обслуживание</div>
+                <div class="block_prev__text">В течение 45 минут реагируем на выкуп автомобилей.</div>
+            </div>
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre3.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Независимая экспертиза</div>
+                <div class="block_prev__text">Проводим оценку любого легкового авто. Учитываем не только состояние машины, но и ситуацию на рынке.</div>
+            </div>
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre4.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Различные 
+                    способы оплаты</div>
+                <div class="block_prev__text">Выплаты на ваших условиях. Возможен наличный расчёт либо перевод на счёт любого банка РФ.</div>
+            </div>
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre5.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Честная 
+                    оценка</div>
+                <div class="block_prev__text">Наша цель — высокая репутация и привлечение постоянных клиентов. Мы не стремимся за максимальной прибылью.</div>
+            </div>
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre6.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Индивидуальный подход</div>
+                <div class="block_prev__text">Предоставляем гибкие условия каждому клиенту. Менеджеры всегда рады помочь!</div>
+            </div>
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre7.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Оперативность</div>
+                <div class="block_prev__text">Предварительная оценка авто возможна по телефону. Выплата через полчаса с момента обращения.</div>
+            </div>
+            <div class="block_prev__block">
+                <div class="block_prev__icon">
+                    <img src="./img/pre8.svg" alt="">
+                </div>
+                <div class="block_prev__tit">Документальное оформление</div>
+                <div class="block_prev__text">Каждая сделка проводится под контролем опытных юристов.</div>
+            </div>
+        </div>
+        <div class="glide dist-glide-js" v-if="window.width <1023">
+            <div data-glide-el="track" class="glide__track">
+                <div class="block_prev__blocks">
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre1.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Более 7 лет на рынке</div>
+                        <div class="block_prev__text">Автоломбард TOP MCA на рынке с 2013 года. Выкупаем авто за максимальную стоимость.</div>
+                    </div>
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre2.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Выездное обслуживание</div>
+                        <div class="block_prev__text">В течение 45 минут реагируем на выкуп автомобилей.</div>
+                    </div>
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre3.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Независимая экспертиза</div>
+                        <div class="block_prev__text">Проводим оценку любого легкового авто. Учитываем не только состояние машины, но и ситуацию на рынке.</div>
+                    </div>
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre4.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Различные 
+                            способы оплаты</div>
+                        <div class="block_prev__text">Выплаты на ваших условиях. Возможен наличный расчёт либо перевод на счёт любого банка РФ.</div>
+                    </div>
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre5.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Честная 
+                            оценка</div>
+                        <div class="block_prev__text">Наша цель — высокая репутация и привлечение постоянных клиентов. Мы не стремимся за максимальной прибылью.</div>
+                    </div>
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre6.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Индивидуальный подход</div>
+                        <div class="block_prev__text">Предоставляем гибкие условия каждому клиенту. Менеджеры всегда рады помочь!</div>
+                    </div>
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre7.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Оперативность</div>
+                        <div class="block_prev__text">Предварительная оценка авто возможна по телефону. Выплата через полчаса с момента обращения.</div>
+                    </div>
+                    <div class="block_prev__block">
+                        <div class="block_prev__icon">
+                            <img src="./img/pre8.svg" alt="">
+                        </div>
+                        <div class="block_prev__tit">Документальное оформление</div>
+                        <div class="block_prev__text">Каждая сделка проводится под контролем опытных юристов.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0">1</button>
+                <button class="glide__bullet" data-glide-dir="=1">2</button>
+                <button class="glide__bullet" data-glide-dir="=2">3</button>
+                <button class="glide__bullet" data-glide-dir="=3">3</button>
+                <button class="glide__bullet" data-glide-dir="=4">3</button>
+                <button class="glide__bullet" data-glide-dir="=5">3</button>
+                <button class="glide__bullet" data-glide-dir="=6">3</button>
+                <button class="glide__bullet" data-glide-dir="=7">3</button>
+            </div>
+        </div>
+    </div>
+</div>
             <div class="block_form center_block">
     <div class="block_form__l-side">
         <div class="block_form__title"><span>Оформляй заявку на займ</span> сейчас и получите <span>+10%</span> от оценочной стоимости автомобиля!</div>
@@ -713,6 +886,6 @@
     </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20230303171558"></script>
+    <script src="js/app.min.js?_v=20230303214427"></script>
 </body>
 </html>

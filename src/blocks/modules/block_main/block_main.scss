@@ -1,8 +1,10 @@
-.block_first {
+.block_main { 
     display: flex;
     position: relative;
+    padding-top: 100px;
     @media all and (max-width: 1080px) {
         flex-direction: column;
+        padding-top: 30px;
     }
     &__l-side {
         width: 63%;
@@ -11,8 +13,9 @@
         }
     }
     &__r-side {
-        width: 55%;
+        width: 61%;
         position: absolute;
+        pointer-events: none;
         z-index: 2;
         right: -80px;
         top: -50px;
@@ -36,6 +39,7 @@
         }
     }
     &__h1 {
+        margin: 0;
         font-style: normal;
         font-weight: 600;
         font-size: 60px;
@@ -129,12 +133,12 @@
                     display: inline-block;
                     max-width: 228px;
                     width: 100%;
-                    &:hover {
-                        background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
-                    }
                     @media all and (max-width: 1080px) {
                         margin-top: 16px;
                         max-width: 100%;
+                    }
+                    &:hover {
+                        background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
                     }
                 }
             }

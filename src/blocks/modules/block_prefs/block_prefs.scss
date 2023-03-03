@@ -63,6 +63,9 @@
         width: 100%;
         text-decoration: none;
         text-align: center;
+        &:hover {
+            background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
+        }
         &.mob {
             display: none;
             @media all and (max-width: 1023px) {
