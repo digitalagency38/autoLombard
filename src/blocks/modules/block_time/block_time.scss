@@ -1,0 +1,168 @@
+.block_time {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media all and (max-width: 1023px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__item {
+        padding: 100px 80px;
+        border: 2px solid #E3ECFC;
+        border-radius: 5px;
+        padding-bottom: 80px;
+        background: #fff;
+        @media all and (max-width: 1320px) {
+            padding: 40px 20px;
+            padding-bottom: 30px;
+        }
+    }
+    &__top {
+        justify-content: space-between;
+        display: flex;
+        padding-bottom: 50px;
+        @media all and (max-width: 1180px) {
+            flex-direction: column;
+            padding-bottom: 44px;
+        }
+    }
+    &__l-side {
+        width: calc(50% - 10px);
+        @media all and (max-width: 1180px) {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 140%;
+        color: #071A39;
+        margin-bottom: 40px;
+        @media all and (max-width: 1180px) {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #0A2756;
+        margin-bottom: 30px;
+        b {
+            font-weight: 600;
+        }
+        @media all and (max-width: 1180px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        padding: 16px 36px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        background: #397BE7;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        @media all and (max-width: 520px) {
+            padding: 16px;
+            width: 100%;
+        }
+    }
+    &__r-side {
+        width: calc(50% - 10px);
+        text-align: center;
+        @media all and (max-width: 1180px) {
+            max-width: 420px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media all and (max-width: 1023px) {
+
+        }
+    }
+    &__img {
+        position: relative;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        &:before {
+            content: '';
+            background: url(../img/hend.png) 50% / 100% no-repeat;
+            width: 270px;
+            height: 290px;
+            top: 188px;
+            left: -40px;
+            position: absolute;
+            @media all and (max-width: 1023px) {
+                width: 211px;
+                height: 178px;
+                top: 215px;
+                left: 10px; 
+            }
+            @media all and (max-width: 520px) {
+                width: 120px;
+                height: 108px;
+                top: 90px;
+                left: -19px;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            width: 100%;
+        }
+        @media all and (max-width: 520px) {
+            max-width: 180px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+        position: relative;
+        z-index: 2;
+        background: #fff;
+    }
+    &__block {
+        background: #F8FAFC;
+        border: 1px solid #E3ECFC;
+        border-radius: 5px;
+        padding: 40px 30px;
+        width: calc(50% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 30px 20px;
+        }
+    }
+    &__tit {
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: #071A39;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+    }
+    &__txt {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #0A2756;
+    }
+}

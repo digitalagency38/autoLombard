@@ -76,17 +76,19 @@ p {
 
 /* Track */
 *::-webkit-scrollbar-track {
-    background: #292B3A;
+    background: #E3ECFC;
+    border-radius: 200px;
 }
 
 /* Handle */
 *::-webkit-scrollbar-thumb {
-    background: #11418F;
+    background: #397BE7;
+    border-radius: 200px;
 }
 
 /* Handle on hover */
 *::-webkit-scrollbar-thumb:hover {
-    background: #11418F;
+    background: #397BE7;
 }
 
 // scrollbar end

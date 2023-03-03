@@ -1,0 +1,88 @@
+.block_prefs {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media all and (max-width: 1023px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 140%;
+        color: #071A39;
+        margin-bottom: 50px;
+        @media all and (max-width: 1023px) {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__l-side {
+        width: calc(50% - 44px);
+    }
+    &__r-side {
+        width: calc(50% - 44px);
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        color: #0A2756;
+        margin-bottom: 44px;
+    }
+    &__btn {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        padding: 16px;
+        display: block;
+        background: #397BE7;
+        border-radius: 5px;
+        max-width: 238px;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 20px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 140%;
+            color: #0A2756;
+            position: relative;
+            padding-left: 19px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
+            }
+        }
+    }
+    &__info {
+        padding: 20px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        background: linear-gradient(171.09deg, #1D68E4 -10.48%, #9747FF 77.8%);
+        border-radius: 5px;
+    }
+}
