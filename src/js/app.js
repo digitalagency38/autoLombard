@@ -8,6 +8,7 @@ import Header from '../blocks/modules/header/header.js';
 import Modals from '../blocks/modules/modals/modals.js';
 import BlockDistance from '../blocks/modules/block_distance/block_distance.js';
 import BlockReviews from '../blocks/modules/block_reviews/block_reviews.js';
+import BlockInfo from '../blocks/modules/block_info/block_info.js';
 
 window.app = new Vue({
     el: '#app',
@@ -33,6 +34,34 @@ window.app = new Vue({
                 gap: 20,
                 startAt: 0,
                 breakpoints: {
+                    1023: {
+                        perView: 2,
+                        gap: 16,
+                    },
+                    767: {
+                        perView: 1
+                    },
+                    480: {
+                        perView: 1,
+                        peek: {
+                            before: 16,
+                            after: 16
+                        }
+                    }
+                }
+            }
+        }),
+        BlockInfo: new BlockInfo({
+            sliderOptions: {
+                type: 'carousel',
+                perView: 4,
+                gap: 20,
+                startAt: 0,
+                breakpoints: {
+                    1340: {
+                        perView: 3,
+                        gap: 16,
+                    },
                     1023: {
                         perView: 2,
                         gap: 16,
@@ -85,6 +114,7 @@ window.app = new Vue({
         this.header.init();
         this.modals.init();
         this.BlockDistance.init();
+        this.BlockInfo.init();
         this.BlockReviews.init();
     },
     computed: {

@@ -11,7 +11,26 @@
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
         <div class="content">
-            
+            <div class="center_block">
+                @@include('blocks/modules/block_first/block_first.html', {})
+            </div>  
+            @@include('blocks/modules/block_steps/block_steps.html', {})
+            @@include('blocks/modules/block_services/block_services.html', {})
+            <div class="center_block">
+                @@include('blocks/modules/block_tabs/block_tabs.html', {})
+                @@include('blocks/modules/block_time/block_time.html', {})
+            </div>
+            @@include('blocks/modules/block_form/block_form.html', {})
+            @@include('blocks/modules/block_auto/block_auto.html', {})
+            @@include('blocks/modules/block_partners/block_partners.html', {})
+            @@include('blocks/modules/block_reviews/block_reviews.html', {})
+            <div class="center_block">
+                @@include('blocks/modules/block_question/block_question.html', {})
+            </div>
+            @@include('blocks/modules/block_map/block_map.html', {})
+            <div class="center_block">
+                @@include('blocks/modules/block_text/block_text.html', {})
+            </div>
         </div>
         @@include('blocks/modules/footer/footer.html', {})
     </div>

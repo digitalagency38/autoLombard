@@ -1,0 +1,31 @@
+.block_text {
+    padding-top: 100px;
+    @media all and (max-width: 1023px) {
+        padding-top: 60px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 140%;
+        color: #071A39;
+        margin-bottom: 40px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #0A2756;
+        b {
+            font-weight: 600;
+        }
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+        }
+    }
+}
