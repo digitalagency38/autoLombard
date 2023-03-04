@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css?_v=20230303214427">
+    <link rel="stylesheet" href="css/style.css?_v=20230304122903">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -15,7 +15,7 @@
             <img src="./img/logo2.svg" alt="">
         </a>
         <div class="header__description">Займы под залог авто <br>для физических и юридических лиц</div>
-        <div class="header__burger" v-if="isTablet || isMobile" :class="{'isOpened': header.isMobileMenuOpened}">
+        <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}">
             <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
             <div class="header__burger--body">
                 <div class="header__top">
@@ -23,7 +23,7 @@
                         <img src="./img/logo2.svg" alt="">
                     </a>
                     <div class="header__description">Займы под залог авто <br>для физических и юридических лиц</div>
-                    <div class="header__burger" v-if="isTablet || isMobile" :class="{'isOpened': header.isMobileMenuOpened}">
+                    <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}">
                         <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
                     </div>
                     <div class="header__tel">
@@ -886,6 +886,6 @@
     </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20230303214427"></script>
+    <script src="js/app.min.js?_v=20230304122903"></script>
 </body>
 </html>

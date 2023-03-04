@@ -4,7 +4,7 @@
             <img src="./img/logo2.svg" alt="">
         </a>
         <div class="header__description">Займы под залог авто <br>для физических и юридических лиц</div>
-        <div class="header__burger" v-if="isTablet || isMobile" :class="{'isOpened': header.isMobileMenuOpened}">
+        <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}">
             <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
             <div class="header__burger--body">
                 <div class="header__top">
@@ -12,7 +12,7 @@
                         <img src="./img/logo2.svg" alt="">
                     </a>
                     <div class="header__description">Займы под залог авто <br>для физических и юридических лиц</div>
-                    <div class="header__burger" v-if="isTablet || isMobile" :class="{'isOpened': header.isMobileMenuOpened}">
+                    <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}">
                         <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
                     </div>
                     <div class="header__tel">
