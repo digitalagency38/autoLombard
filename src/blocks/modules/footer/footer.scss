@@ -1,5 +1,5 @@
 .footer {
-    padding: 80px 80px 40px 80px;
+    padding: 80px 80px 30px 80px;
     background: #11418F;
     border-radius: 40px 40px 0px 0px;
     margin-top: 100px;
@@ -215,8 +215,13 @@
         color: #FFFFFF;
         text-decoration: none;
         display: block;
+        padding-bottom: 10px;
+        border-bottom: 1px solid transparent;
+        &:hover {
+            border-color: #fff;
+        }
         @media all and (max-width: 1023px) {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
     &__reserve {

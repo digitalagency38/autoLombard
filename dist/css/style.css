@@ -546,35 +546,35 @@ template {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-100.woff2") format("woff2"), url("../fonts/museosanscyrl-100.woff") format("woff"), url("../fonts/museosanscyrl-100.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "museosanscyrl";
-  font-display: swap;
-  src: url("../fonts/museosanscyrl-500.woff2") format("woff2"), url("../fonts/museosanscyrl-500.woff") format("woff"), url("../fonts/museosanscyrl-500.ttf") format("ttf");
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-700.woff2") format("woff2"), url("../fonts/museosanscyrl-700.woff") format("woff"), url("../fonts/museosanscyrl-700.ttf") format("ttf");
-  font-weight: 700;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "museosanscyrl";
   font-display: swap;
-  src: url("../fonts/museosanscyrl-300.woff2") format("woff2"), url("../fonts/museosanscyrl-300.woff") format("woff"), url("../fonts/museosanscyrl-300.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/museosanscyrl-500.woff2") format("woff2"), url("../fonts/museosanscyrl-500.woff") format("woff"), url("../fonts/museosanscyrl-500.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-900.woff2") format("woff2"), url("../fonts/museosanscyrl-900.woff") format("woff"), url("../fonts/museosanscyrl-900.ttf") format("ttf");
-  font-weight: 900;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "museosanscyrl";
+  font-display: swap;
+  src: url("../fonts/museosanscyrl-300.woff2") format("woff2"), url("../fonts/museosanscyrl-300.woff") format("woff"), url("../fonts/museosanscyrl-300.ttf") format("ttf");
+  font-weight: 400;
 }
 
 body {
@@ -853,7 +853,7 @@ p:last-child {
 }
 
 .footer {
-  padding: 80px 80px 40px 80px;
+  padding: 80px 80px 30px 80px;
   background: #11418F;
   border-radius: 40px 40px 0px 0px;
   margin-top: 100px;
@@ -1033,6 +1033,12 @@ p:last-child {
   color: #FFFFFF;
   text-decoration: none;
   display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+.footer__politic:hover {
+  border-color: #fff;
 }
 
 .footer__reserve {
@@ -3370,7 +3376,7 @@ p:last-child {
   }
 
   .footer__politic {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .footer__reserve {

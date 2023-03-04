@@ -141,7 +141,7 @@ window.app = new Vue({
         }),
         BlockReviews: new BlockReviews({
             sliderOptions: {
-                type: 'slider',
+                type: 'carousel',
                 perView: 3,
                 gap: 20,
                 startAt: 0,
