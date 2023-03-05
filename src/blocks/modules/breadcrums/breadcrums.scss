@@ -7,7 +7,7 @@
         @media all and (max-width: 1023px) {
             margin: 30px 0;
         }
-        a {
+        span a, span a span {
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
@@ -15,7 +15,7 @@
             color: #0A2756;
             text-decoration: none;
         }
-        span {
+        span span {
             font-style: normal;
             font-weight: 300;
             font-size: 16px;

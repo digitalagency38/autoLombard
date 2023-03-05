@@ -1096,7 +1096,8 @@ p:last-child {
   margin: 40px 0;
 }
 
-.breadcrums__items a {
+.breadcrums__items span a,
+.breadcrums__items span a span {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1105,7 +1106,7 @@ p:last-child {
   text-decoration: none;
 }
 
-.breadcrums__items span {
+.breadcrums__items span span {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1123,6 +1124,7 @@ p:last-child {
 }
 
 .title_h1 {
+  margin: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
