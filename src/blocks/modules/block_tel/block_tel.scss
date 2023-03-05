@@ -1,11 +1,19 @@
 .block_tel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 100px;
+    padding-bottom: 100px;
+    background: #FFFFFF;
+border-radius: 40px;
     @media all and (max-width: 1023px) {
-        flex-direction: column;
         padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+        }
     }
     &__l-side, &__r-side {
         width: calc(50% - 63px);
