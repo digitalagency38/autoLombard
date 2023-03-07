@@ -20,22 +20,8 @@
         border-top: 1px solid #E3ECFC;
         border-bottom: 1px solid #E3ECFC;
     }
-    &__item {
-        @media all and (max-width: 1023px) {
-            overflow: auto;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-            overflow: -moz-scrollbars-none;
-            &::-webkit-scrollbar { 
-                width: 0; 
-                height: 0;
-            }
-        }
-    }
     &__blocks {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
         @media all and (max-width: 1023px) {
             width: max-content;
             -ms-overflow-style: none;
@@ -47,14 +33,11 @@
         }
     }
     &__block {
-        height: 120px;
-        background: #FFFFFF;
-        border-radius: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
-        @media all and (max-width: 1023px) {
-            width: 166px;
-        }
+        height: 120px;
+        background: #FFFFFF;
+        border-radius: 5px;
     }
 }

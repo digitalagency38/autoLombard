@@ -11,6 +11,7 @@ import BlockReviews from '../blocks/modules/block_reviews/block_reviews.js';
 import BlockInfo from '../blocks/modules/block_info/block_info.js';
 import BlockSteps from '../blocks/modules/block_steps/block_steps.js';
 import BlockPrev from '../blocks/modules/block_prev/block_prev.js';
+import BlockPartners from '../blocks/modules/block_partners/block_partners.js';
 
 window.app = new Vue({
     el: '#app',
@@ -30,6 +31,28 @@ window.app = new Vue({
             modalsSelector: "data-modal",
             modalsOpenerSelector: "data-modal-id",
             openedClass: "isOpened"
+        }),
+        BlockPartners: new BlockPartners({
+            sliderOptions: {
+                type: 'carousel',
+                perView: 7,
+                gap: 20,
+                startAt: 0,
+                autoplay: 3000,
+                breakpoints: {
+                    1340: {
+                        perView: 4,
+                        gap: 16,
+                    },
+                    1023: {
+                        perView: 3,
+                        gap: 16,
+                    },
+                    767: {
+                        perView: 2
+                    }
+                }
+            }
         }),
         BlockPrev: new BlockPrev({
             sliderOptions: {
@@ -182,6 +205,7 @@ window.app = new Vue({
         this.BlockReviews.init();
         this.BlockSteps.init();
         this.BlockPrev.init();
+        this.BlockPartners.init();
     },
     computed: {
         isMobile: function () {

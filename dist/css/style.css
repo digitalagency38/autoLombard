@@ -546,35 +546,35 @@ template {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-100.woff2") format("woff2"), url("../fonts/museosanscyrl-100.woff") format("woff"), url("../fonts/museosanscyrl-100.ttf") format("ttf");
-  font-weight: 100;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-300.woff2") format("woff2"), url("../fonts/museosanscyrl-300.woff") format("woff"), url("../fonts/museosanscyrl-300.ttf") format("ttf");
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-700.woff2") format("woff2"), url("../fonts/museosanscyrl-700.woff") format("woff"), url("../fonts/museosanscyrl-700.ttf") format("ttf");
-  font-weight: 700;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-500.woff2") format("woff2"), url("../fonts/museosanscyrl-500.woff") format("woff"), url("../fonts/museosanscyrl-500.ttf") format("ttf");
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "museosanscyrl";
   font-display: swap;
   src: url("../fonts/museosanscyrl-900.woff2") format("woff2"), url("../fonts/museosanscyrl-900.woff") format("woff"), url("../fonts/museosanscyrl-900.ttf") format("ttf");
-  font-weight: 900;
+  font-weight: 400;
 }
 
 body {
@@ -1584,17 +1584,15 @@ p:last-child {
 
 .block_partners__blocks {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .block_partners__block {
-  height: 120px;
-  background: #FFFFFF;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 120px;
+  background: #FFFFFF;
+  border-radius: 5px;
 }
 
 .block_auto {
@@ -3555,18 +3553,6 @@ p:last-child {
     font-size: 32px;
   }
 
-  .block_partners__item {
-    overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: -moz-scrollbars-none;
-  }
-
-  .block_partners__item::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-
   .block_partners__blocks {
     width: -moz-max-content;
     width: max-content;
@@ -3577,10 +3563,6 @@ p:last-child {
 
   .block_partners__blocks::-webkit-scrollbar {
     width: 0;
-  }
-
-  .block_partners__block {
-    width: 166px;
   }
 
   .block_auto {
